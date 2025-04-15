@@ -1,0 +1,52 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
+  color: #000;
+}
+
+/* @media all and (min-width:1024px) {
+    body{
+        padding-top: 84px;
+    }
+} */
+.container {
+  width: 100%;
+  max-width: 1360px;
+  padding: 0 20px;
+  margin: 0 auto;
+}
+.rotate-y-180 {
+  transform: rotateX(0deg) rotateY(180deg);
+}
+img {
+  user-select: none;
+}
+
+@media all and (min-width: 1024px) {
+  .investment_return h2 {
+    font-size: 32px;
+    max-width: 340px;
+    text-align: center;
+    white-space: wrap;
+    line-height: 50px;
+  }
+}
+
+/* rounded-xl shadow-lg */
+
+/* #root {
+  opacity: 0.5;
+}
+
+@media all and (min-width: 1200px) {
+  body {
+    background: url("../src/assets/images/bg.png") no-repeat top center;
+    min-height: 12000px;
+  }
+} */
