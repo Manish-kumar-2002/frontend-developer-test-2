@@ -10,11 +10,6 @@ body {
   color: #000;
 }
 
-/* @media all and (min-width:1024px) {
-    body{
-        padding-top: 84px;
-    }
-} */
 .container {
   width: 100%;
   max-width: 1360px;
@@ -38,10 +33,7 @@ img {
   }
 }
 
-
-/* rounded-xl shadow-lg */
-
-/* #root {
+#root {
   opacity: 0.5;
 }
 
@@ -50,4 +42,4 @@ img {
     background: url("../src/assets/images/bg.png") no-repeat top center;
     min-height: 12000px;
   }
-} */
+}

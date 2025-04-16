@@ -44,12 +44,12 @@ const Header = () => {
         </motion.a>
 
         {/* Mobile Menu Button */}
-        <motion.button
+        <button
           className="lg:hidden text-black"
           onClick={() => setIsOpen(!isOpen)}
-          variants={fadeIn("down", 0.4)}
-          initial="hidden"
-          animate="show"
+          // variants={fadeIn("down", 0.4)}
+          // initial="hidden"
+          // animate="show"
         >
           {isOpen ? (
             <i
@@ -64,7 +64,7 @@ const Header = () => {
               } `}
             ></i>
           )}
-        </motion.button>
+        </button>
 
         {/* Navigation Links */}
         <nav
@@ -72,58 +72,6 @@ const Header = () => {
             isOpen ? "block shadow-lg lg:shadow-none" : "hidden"
           } absolute top-full left-0 w-full z-10 bg-white lg:bg-transparent lg:static lg:flex lg:items-center lg:justify-center lg:gap-10`}
         >
-          {/* <motion.ul className="flex flex-col lg:flex-row items-center gap-6 lg:gap-10 p-4 lg:p-0 lg:gap-[52px] lg:ml-[-28px]">
-            <li>
-              <a
-                href="#"
-                className={`lg:text-[24px] font-normal ${
-                  isScrolled ? "lg:text-black" : "lg:text-white"
-                }`}
-              >
-                Home
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className={`lg:text-[24px] font-normal ${
-                  isScrolled ? "lg:text-black" : "lg:text-white"
-                }`}
-              >
-                About
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className={`lg:text-[24px] font-normal ${
-                  isScrolled ? "lg:text-black" : "lg:text-white"
-                }`}
-              >
-                Investment
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className={`lg:text-[24px] font-normal ${
-                  isScrolled ? "lg:text-black" : "lg:text-white"
-                }`}
-              >
-                Gold
-              </a>
-            </li>
-            <li>
-              <a
-                href="#"
-                className={`lg:text-[24px] font-normal ${
-                  isScrolled ? "lg:text-black" : "lg:text-white"
-                }`}
-              >
-                Utility Token
-              </a>
-            </li>
-          </motion.ul> */}
           <motion.ul
             className="flex flex-col lg:flex-row items-center gap-6 lg:gap-10 p-4 lg:p-0 lg:gap-[52px] lg:ml-[-28px]"
             initial="hidden"
@@ -138,8 +86,10 @@ const Header = () => {
                   <a
                     href="#"
                     className={`lg:text-[24px] font-normal ${
-                      isScrolled ? "lg:text-black" : "lg:text-white"
-                    }`}
+                      isScrolled
+                        ? "lg:text-black after:bg-[#000000]"
+                        : "lg:text-white after:bg-[#ffffff]"
+                    } relative after:bg-[#ffffff] after:absolute after:h-[1px] after:w-0 after:bottom-[-3px] after:left-0 hover:after:w-full after:transition-all after:duration-300`}
                   >
                     {text}
                   </a>
@@ -158,9 +108,23 @@ const Header = () => {
           initial="hidden"
           animate="show"
         >
-          <a href="#">Register</a>
+          <a
+            className={`relative ${
+              isScrolled ? " after:bg-[#000000]" : " after:bg-[#ffffff]"
+            } after:bg-[#ffffff] after:absolute after:h-[1px] after:w-0 after:bottom-[-3px] after:left-0 hover:after:w-full after:transition-all after:duration-300`}
+            href="#"
+          >
+            Register
+          </a>
           <span>/</span>
-          <a href="#">Login</a>
+          <a
+            className={`relative ${
+              isScrolled ? "after:bg-[#000000]" : " after:bg-[#ffffff]"
+            } after:bg-[#ffffff] after:absolute after:h-[1px] after:w-0 after:bottom-[-3px] after:left-0 hover:after:w-full after:transition-all after:duration-300`}
+            href="#"
+          >
+            Login
+          </a>
         </motion.div>
       </div>
     </header>

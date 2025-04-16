@@ -50,15 +50,15 @@ const InvestmentCalculator = () => {
   return (
     <div
       ref={ref}
-      className="min-h-screen text-white flex items-center justify-center p-4"
+      className="min-h-screen text-white flex items-center justify-center p-4 lg:pt-[74px] shadow-xl"
     >
       <motion.div
         initial={{ y: 40, opacity: 0 }}
         animate={isInView ? { y: 0, opacity: 1 } : {}}
         transition={{ delay: 0.6, duration: 0.6, ease: "easeOut" }}
-        className="bg-[#0c3c60] text-black rounded-2xl shadow-2xl p-6 grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl"
+        className="bg-[#0F4B71] text-black rounded-2xl shadow-2xl p-6 grid grid-cols-1 md:grid-cols-2 gap-6 w-full max-w-6xl"
       >
-        <div className="space-y-4 bg-[#FAFAFA] rounded-2xl p-3">
+        <div className="space-y-4 bg-[#FAFAFA] rounded-2xl p-3 flex flex-col lg:gap-[131px]">
           <div className="space-y-4">
             <Input
               type="number"
@@ -96,14 +96,15 @@ const InvestmentCalculator = () => {
               value={10}
               // onChange={(e) => setRate(Number(e.target.value))}
             />
+            <span className="text-[#737373] text-[12px] leading-[18px]" >Exclude debt payments</span>
           </div>
           <Button className="w-full" onClick={calculateReturns}>
             Calculate
           </Button>
         </div>
 
-        <div className="text-white bg-[#0c3c60] rounded-2xl p-6">
-          <h2 className="text-lg font-semibold text-yellow-400 mb-2">
+        <div className="text-white bg-[#0F4B71] rounded-2xl p-6">
+          <h2 className="text-lg font-semibold !max-w-max text-[#FFFD70] lg:!text-[28px] text-lato mb-2 lg:mb-3 !leading-[20px] text-start">
             Your Returns
           </h2>
           <p className="text-sm mb-1">By investing ₹{amount} monthly</p>
