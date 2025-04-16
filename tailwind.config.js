@@ -6,16 +6,21 @@ export default {
   ],
   theme: {
     extend: {
+      transform: {
+        'flip-y': 'rotateX(0deg) rotateY(180deg)',
+      },
       colors: {
         lightYellow: "#FFFD70",
         goldenOrange: "#FFB531",
       },
       fontFamily: {
+        inter: [ 'Inter', 'sans-serif'],
         lato: ['Lato', 'sans-serif'],
         roboto: ['Roboto', 'sans-serif'],
       },
       animation: {
         fadeIn: 'fadeIn 1s ease-in-out',
+        slideDown: 'slideDown 1.5s linear infinite',
       },
       keyframes: {
         fadeIn: {

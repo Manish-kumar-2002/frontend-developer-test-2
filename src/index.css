@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css");
 @tailwind base;
 @tailwind components;
@@ -22,7 +22,7 @@ body {
   margin: 0 auto;
 }
 .rotate-y-180 {
-  transform: rotateX(0deg) rotateY(180deg);
+  transform: rotateX(0deg) rotateY(180deg) !important;
 }
 img {
   user-select: none;
@@ -37,6 +37,7 @@ img {
     line-height: 50px;
   }
 }
+
 
 /* rounded-xl shadow-lg */
 
