@@ -6,7 +6,7 @@ import { fadeIn } from "../utils/variants";
 
 const HeroSection = () => {
   return (
-    <section className=" py-[40px] pt-[114px] lg:pt-[184px] h-auto md:h-[500px] lg:h-[889px] relative overflow-hidden">
+    <section className=" py-[40px] pt-[114px] lg:pt-[184px] h-auto md:h-[600px] lg:h-[889px] relative overflow-hidden">
       {/* Background Image */}
       <img
         className="absolute top-0 left-0 z-1 w-full h-full object-cover"
