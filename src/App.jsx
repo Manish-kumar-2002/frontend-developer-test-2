@@ -7,7 +7,6 @@ import WhyAiiongold from "./layouts/WhyAiiongold";
 import WhyGold from "./layouts/WhyGold";
 
 function App() {
-
   return (
     <>
       <Header />

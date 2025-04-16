@@ -44,12 +44,12 @@ const Header = () => {
         </motion.a>
 
         {/* Mobile Menu Button */}
-        <button
+        <motion.button
           className="lg:hidden text-black"
           onClick={() => setIsOpen(!isOpen)}
-          // variants={fadeIn("down", 0.4)}
-          // initial="hidden"
-          // animate="show"
+          variants={fadeIn("down", 0.4)}
+          initial="hidden"
+          animate="show"
         >
           {isOpen ? (
             <i
@@ -64,7 +64,7 @@ const Header = () => {
               } `}
             ></i>
           )}
-        </button>
+        </motion.button>
 
         {/* Navigation Links */}
         <nav
@@ -89,7 +89,7 @@ const Header = () => {
                       isScrolled
                         ? "lg:text-black after:bg-[#000000]"
                         : "lg:text-white after:bg-[#ffffff]"
-                    } relative after:bg-[#ffffff] after:absolute after:h-[1px] after:w-0 after:bottom-[-3px] after:left-0 hover:after:w-full after:transition-all after:duration-300`}
+                    } relative after:absolute after:h-[1px] after:w-0 after:bottom-[-3px] after:left-0 hover:after:w-full after:transition-all after:duration-300`}
                   >
                     {text}
                   </a>
@@ -111,7 +111,7 @@ const Header = () => {
           <a
             className={`relative ${
               isScrolled ? " after:bg-[#000000]" : " after:bg-[#ffffff]"
-            } after:bg-[#ffffff] after:absolute after:h-[1px] after:w-0 after:bottom-[-3px] after:left-0 hover:after:w-full after:transition-all after:duration-300`}
+            } after:absolute after:h-[1px] after:w-0 after:bottom-[-3px] after:left-0 hover:after:w-full after:transition-all after:duration-300`}
             href="#"
           >
             Register
@@ -120,7 +120,7 @@ const Header = () => {
           <a
             className={`relative ${
               isScrolled ? "after:bg-[#000000]" : " after:bg-[#ffffff]"
-            } after:bg-[#ffffff] after:absolute after:h-[1px] after:w-0 after:bottom-[-3px] after:left-0 hover:after:w-full after:transition-all after:duration-300`}
+            } after:absolute after:h-[1px] after:w-0 after:bottom-[-3px] after:left-0 hover:after:w-full after:transition-all after:duration-300`}
             href="#"
           >
             Login

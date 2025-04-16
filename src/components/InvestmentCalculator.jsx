@@ -96,7 +96,9 @@ const InvestmentCalculator = () => {
               value={10}
               // onChange={(e) => setRate(Number(e.target.value))}
             />
-            <span className="text-[#737373] text-[12px] leading-[18px]" >Exclude debt payments</span>
+            <span className="text-[#737373] text-[12px] leading-[18px]">
+              Exclude debt payments
+            </span>
           </div>
           <Button className="w-full" onClick={calculateReturns}>
             Calculate

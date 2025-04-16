@@ -33,7 +33,7 @@ img {
   }
 }
 
-#root {
+/* #root {
   opacity: 0.5;
 }
 
@@ -42,4 +42,4 @@ img {
     background: url("../src/assets/images/bg.png") no-repeat top center;
     min-height: 12000px;
   }
-}
+} */

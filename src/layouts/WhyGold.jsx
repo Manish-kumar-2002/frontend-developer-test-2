@@ -8,8 +8,6 @@ const WhyGold = () => {
   return (
     <>
       <SectionHeading title="Why Gold? Why Now?" />
-      {/* <SectionHeading title="Why Choose Aiiongold" />
-    <SectionHeading title="Investment Return Calculator" /> */}
       <SectionDetails
         imageSrc={imageSrc}
         imageAlt="Gold Card"
@@ -22,7 +20,12 @@ const WhyGold = () => {
               is no longer an option -it's essential. AiionGold makes it easier,
               faster, and more
             </p>
-            <CustomButton label="Read More" bgColor="bg-blue-900" textColor="text-white" borderColor="border-yellow-400" />
+            <CustomButton
+              label="Read More"
+              bgColor="bg-blue-900"
+              textColor="text-white"
+              borderColor="border-yellow-400"
+            />
           </div>
         }
       />

@@ -7,7 +7,7 @@ const SectionDetails = ({ imageSrc, imageAlt, content, reverse }) => {
       <div
         className={`flex flex-col md:flex-row justify-between gap-8 my-10 ${
           reverse ? "md:flex-row-reverse" : ""
-        } animate-fadeIn`}
+        } animate-fadeIn overflow-hidden`}
       >
         <motion.div
           initial={{ x: reverse ? 100 : -100, opacity: 0 }}

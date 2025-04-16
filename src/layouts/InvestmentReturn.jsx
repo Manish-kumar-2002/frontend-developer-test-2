@@ -9,8 +9,9 @@ const InvestmentReturn = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
   return (
     <div
-    ref={ref}
-     className="investment_return py-6  lg:py-12 lg:pt-[122px]">
+      ref={ref}
+      className="investment_return py-6  lg:py-12 lg:pt-[122px] overflow-hidden"
+    >
       <SectionHeading title={"Investment Return Calculator"} />
       <InvestmentCalculator />
       <SectionHeading title={"Digital Gold Investment"} />

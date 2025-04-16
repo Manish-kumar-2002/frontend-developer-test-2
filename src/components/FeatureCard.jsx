@@ -8,7 +8,9 @@ const FeatureCard = ({ card_icon, card_heading, card_pra }) => {
         <div className="text-2xl relative font-semibold mb-2 lg:mb-3 lg:text-[28px] font-[600]">
           {card_heading}
         </div>
-        <p className="lg:text-[20px] lg:font-[500] leading-[31px]">{card_pra}</p>
+        <p className="lg:text-[20px] lg:font-[500] leading-[31px]">
+          {card_pra}
+        </p>
         {/* Vertical Line */}
         <div className="absolute left-[-20px] top-3 h-[75%] w-[0.1rem]">
           <div className="h-[60%] bg-[#D9D9D9]" />
