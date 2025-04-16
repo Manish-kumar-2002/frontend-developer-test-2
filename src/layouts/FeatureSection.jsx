@@ -9,7 +9,7 @@ import UltimateSecurity from "../assets/images/UltimateSecurity.svg";
 
 const FeatureSection = () => {
   return (
-    <div className="featuresection relative py-10 px-6 lg-pb-[0] lg:px-20">
+    <div className="featuresection relative py-10 px-6 lg:pb-[0] lg:px-20">
       <div className="relative z-10 overflow-hidden">
         <div className="md:flex items-center justify-between lg:mb-[65px]">
           {/* Top Two Cards with Motion */}
