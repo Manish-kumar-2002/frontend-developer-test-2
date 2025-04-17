@@ -3,6 +3,7 @@ import React, { useRef } from "react";
 import { motion, useInView } from "framer-motion";
 import LineDecoration from "../assets/images/LineDecoration.svg";
 import LineDecorationRight from "../assets/images/LineDecoration-right.svg";
+import LineDecorationAnimate from "../assets/images/LineDecorationAnimate.svg";
 
 const SectionHeading = ({ title }) => {
   const ref = useRef(null);
@@ -15,7 +16,7 @@ const SectionHeading = ({ title }) => {
       {/* Left Decoration with animated overlay */}
       <div className="relative w-[100px] md:w-auto">
         <motion.img
-          src={LineDecoration}
+          src={LineDecorationAnimate}
           alt="Left Decoration"
           initial={{ x: -100, opacity: 0 }}
           animate={isInView ? { x: 0, opacity: 1 } : {}}
@@ -43,11 +44,11 @@ const SectionHeading = ({ title }) => {
       </motion.h2>
 
       {/* Right Decoration (same overlay, flipped) */}
-      <div className="relative w-[100px] md:w-auto">
+      <div className="rotate-y-180 relative w-[100px] md:w-auto">
         <motion.img
-          src={LineDecorationRight}
+          src={LineDecorationAnimate}
           alt="Right Decoration"
-          initial={{ x: 100, opacity: 0 }}
+          initial={{ x: -100, opacity: 0 }}
           animate={isInView ? { x: 0, opacity: 1 } : {}}
           transition={{ delay: 0.2, duration: 0.6, ease: "easeOut" }}
           className="w-full"
@@ -59,7 +60,7 @@ const SectionHeading = ({ title }) => {
           initial={{ width: "100%" }}
           animate={isInView ? { width: "0%" } : {}}
           transition={{ delay: 0.4, duration: 1, ease: "easeOut" }}
-          className="absolute top-0 left-0 h-full bg-white"
+          className="absolute top-0 right-0 h-full bg-white"
         />
       </div>
     </div>
