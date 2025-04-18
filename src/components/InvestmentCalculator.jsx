@@ -50,7 +50,7 @@ const InvestmentCalculator = () => {
   return (
     <div
       ref={ref}
-      className="min-h-screen text-white flex items-center justify-center p-4 lg:pt-[74px] shadow-xl"
+      className="text-white flex items-center justify-center p-4 lg:pt-[74px] shadow-xl"
     >
       <motion.div
         initial={{ y: 40, opacity: 0 }}
